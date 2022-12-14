@@ -1,13 +1,13 @@
 name: Deploy Astro to GitHub Pages
 
-    on:
-     # Trigger the workflow every time you push to the `main` branch
+  on:
+    # Trigger the workflow every time you push to the `main` branch
       push:
         branches: [ main ]
       # Allows you to run this workflow manually from the Actions tab on GitHub.
       workflow_dispatch:
 
-      # Allow this job to clone the repo and create a page deployment
+    # Allow this job to clone the repo and create a page deployment
     permissions:
       contents: read
       pages: write
@@ -33,11 +33,6 @@ name: Deploy Astro to GitHub Pages
         # Not using npm? Change `npm run build` to `yarn build` or `pnpm run build`
         - name: Build Astro
           run: pnpm run build --if-present
-
-        - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            path: ./dist
 
       deploy:
         environment:
