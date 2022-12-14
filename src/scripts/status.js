@@ -1,6 +1,6 @@
 // Age Calculation
-ageText = document.querySelector("#age");
-myAge = new Date().getTime() - new Date('2002-12-12').getTime();
+const ageText = document.querySelector("#age");
+const myAge = new Date().getTime() - new Date('2002-12-12').getTime();
 ageText.innerHTML = "Level: " + Math.floor(myAge/(31557600000));
 
 // The Tech Stack Interactivity
