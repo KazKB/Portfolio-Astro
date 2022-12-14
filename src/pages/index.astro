@@ -1,0 +1,195 @@
+---
+import Template from '../layouts/template.astro';
+import '../css/status.css';
+---
+
+<Template link1="#status" link2="/room" link3="/workshop" name1="Status" name2="Hobbies" name3="Workshop" heading="Retro Tavern" subHeading="Welcome Folks!">
+	<p>
+		Hello my dear patron. My doors are open to any and everyone. I, Kaleel Boston, was not always interested 
+		in programming. But, as the years go by I got exposed to it. First at a little coding camp at my 
+		secondary school in 3rd form. Then at the same secondary school in 5th form I encountered programming 
+		again. At this time, I was still lost (technically still am), but I got a surge of dopamine whenever 
+		my code worked. This then led me to choose to pursue a degree in it. And here I am. 
+		
+		<br><br>
+
+		This tavern is a demonstration of my skills. And why not let you get to know me at the same time. 
+		Explore till you are content!
+	</p>
+
+	<hr>
+	
+	<h2 id="status">Status</h2>
+	<p>
+		Basic information about myself can be found just right below. 
+		<br>
+		For a quicker seek time just click these links:
+		<li><a href="#profile-image">Profile</a></li>
+		<li><a href="#tech-stack">Tech Stack</a></li>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#work-experience">Work Experience</a></li>
+	</p>
+
+	<hr>
+
+	<img id="profile-image" src="/images/headshot.jpg" alt="Headshot Of Kaleel Boston">
+
+	<hr>
+
+	<div id="profile-card">
+		<h3>Profile Card</h3>
+		<div>
+			<li>Name: Kaleel T. Boston</li>
+			<li id="age"></li>
+			<li>Birthday: 12/12/02</li>
+			<li>Birthstone: Tanzanite</li>
+			<li>Birth Sign: Sagittarius</li>
+			<li>Sex: Male</li>
+			<li>Height: Approx 5'7"/174cm</li>
+			<li>Weight: Approx 132.72lbs/60.2kg</li>
+			<li>Nationality: Antiguan</li>
+			<li>Race/Ethnicity: West Indian</li>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="tech-stack">
+		<h3>Tech Stack</h3>
+
+		<div id="tech-stack-levels">
+			<div>
+				<span id="beginner-level"></span>
+				<p>Beginner</p>
+			</div>
+			 <div>
+				<span id="intermidiate-level"></span>
+				<p>Intermidiate</p>
+			</div>
+			 <div>
+				<span id="advanced-level"></span>
+				<p>Advanced</p>
+			</div>
+		</div>
+
+		<p class="center-text">Click The Programming Language/Script For Brief Discription</p>
+
+		<br>
+
+		<div id="tech-stack-items">
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[0])">Astro</p>
+				<p class="description">
+					Astro is an all-in-one web framework for building fast, content-focused websites. More info can be 
+					found <a href="https://docs.astro.build/en/getting-started/" target="_blank">here</a>.
+				</p>
+			</div>
+			
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[1])">CSS</p>
+				<p class="description">
+					CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, 
+					color, size, and spacing of your content, split it into multiple columns, or add animations and other 
+					decorative features. More info can be found <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">here</a>.
+				</p>
+			</div>
+			
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[2])">Html</p>
+				<p class="description">
+					HTML is a markup language that defines the structure of your content. HTML consists of a series of 
+					elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain
+					way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, 
+					can italicize words, can make the font bigger or smaller, and so on. More info can be found <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank">here</a>.
+				</p>
+			</div>
+			
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[3])">Java</p>
+				<p class="description">
+					Java is a general-purpose, class-based, object-oriented programming language designed for having lesser 
+					implementation dependencies. It is a computing platform for application development. Java is fast, secure, 
+					and reliable, therefore. It is widely used for developing Java applications in laptops, data centers, game 
+					consoles, scientific supercomputers, cell phones, etc.    More info can be found <a href="https://www.javatpoint.com/java-tutorial" target="_blank">here</a>.
+				</p>
+			</div>
+			
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[4])">JavaScript</p>
+				<p class="description">
+					JavaScript is a scripting or programming language that allows you to implement complex features on web 
+					pages — every time a web page does more than just sit there and display static information for you to 
+					look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video 
+					jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer 
+					cake of standard web technologies, two of which (HTML and CSS). More info can be found <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" target="_blank">here</a>.
+				</p>
+			</div>
+			
+			<div>
+				<p class="beginner" onclick="toggle(languageInfo[5])">PHP</p>
+				<p class="description">
+					PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose 
+					scripting language that is especially suited for web development and can be embedded into HTML. More 
+					info can be found <a href="https://www.php.net/manual/en/intro-whatis.php" target="_blank">here</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+
+	<div id="education">
+		<h3>Education</h3>
+		<div>
+			<h4>College</h4>
+			<li>Antigua & Barbuda International Institute of Technology - Sir George Walter Highway and Jabberwock Rd., Coolidge, St. George's, Antigua (2019-2022)</li>
+			<p>Degree:</p>
+			<li>Computer Science - Associates</li>
+			<p>Graduating GPA:</p>
+			<li>3.77</li>
+			<p>Awards:</p>
+			<li>Valedictorian Award - Outstanding Academic Performance</li>
+			<li>Technology Award - Excellence in the Computer Science Major</li>
+
+			<h4>Secondary School</h4>
+			<li>Antigua Grammr School - Old Parham Road, St. John's, Antigua (2014-2019)</li>
+			<p>Extra-Curricular Activity:</p>
+			<li>Interact Club (2016-2019) - Vice President (2018-2019) </li>
+			<p>CXC Grades:</p>
+			<li>English A - Grade 1</li>
+			<li>Industrial Technology (Building Technology) - Grade 1</li>
+			<li>Industrial Technology (Electrical) - Grade 2</li>
+			<li>Information Technology - Grade 1</li>
+			<li>Physics - Grade 2</li>
+			<li>Mathematics - Grade 1</li>
+			<li>Principal of Business - Grade 1</li>
+			<li>Spanish - Grade 2</li>
+			<p>Awards:</p>
+			<li>Excellence in Principles of Business</li>
+			<li>Excellence in Building Technology</li>
+			<li>Most Helpful Student Award</li>
+			<li>The Cleven James Information Technology Award - Outstanding Performance in Information Technology</li>
+
+			<h4>Primary School</h4>
+			<li>Foundation Mixed School - South Factory Road, St. John's, Antigua (2007-2014) </li>
+
+			<h4>Preschool</h4>
+			<li>Baby Paradise - Hattin, St. John's, Antigua (2004-2007)</li>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="work-experience">
+		<h3>Work Experience</h3>
+		<div>
+			<li>Dennis Cocktail Bar & Restaurant - Ffryes Beach, St. Mary's, Antigua</li>
+			<p>Positions:</p>
+			<li>Waiter (Part Time/Summers 2014-2019)</li>
+			<li>Waiter (Full Time/September 2019 - August 2021)</li>
+			<li>Office Assistant/Emergency Waiter (Full Time/December 2021 - August 2022)</li>
+		</div>
+	</div>
+
+	<script src="../javascript/status.js"></script>
+</Template>
