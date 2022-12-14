@@ -1,10 +1,8 @@
 ---
 import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
-import '../styles/reset.css';
-import '../styles/global.css';
 
-const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.props;
+const {link1, link2, link3, name1, name2, name3, heading, subHeading, css} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -20,6 +18,9 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.pr
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="/icons/tavern-sign-icon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href={css}>
     </head>
 
     <body>
@@ -39,8 +40,6 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.pr
 
         <Footer/>
 
-        <script>
-            import "../scripts/header-footer.js";
-        </script>
+        <script is:inline src="/javascript/header-footer.js"></script>
     </body>
 </html>
