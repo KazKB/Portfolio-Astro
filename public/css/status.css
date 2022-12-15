@@ -94,7 +94,7 @@ main h4 {
     margin-bottom: 1rem;
 }
 #tech-stack-items a {
-    font-weight: bold;
+    font-style: italic;
 }
 .beginner, .intermidiate, .advanced {
     text-align: center;
