@@ -60,9 +60,7 @@ main h4 {
     border: none;
     padding: 0;
 }
-#tech-stack a {
-    font-weight: bold;
-}
+
 #tech-stack-levels {
     display: flex;
     justify-content: center;
@@ -94,6 +92,9 @@ main h4 {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+#tech-stack-items a {
+    font-weight: bold;
 }
 .beginner, .intermidiate, .advanced {
     text-align: center;
