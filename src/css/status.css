@@ -1,0 +1,151 @@
+/* Animation */
+@keyframes image {
+    from {
+        border-color: var(--dark-grey);
+    }
+
+    to {
+        border-color: var(--purple-2);
+    }
+}
+
+/* Image Configuration */
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: var(--mid-border) double var(--grey);
+    animation: image 1.5s linear infinite alternate;
+    background-color: white;
+}
+
+/* Main Configuration */
+main h4 {
+    text-align: left;
+}
+
+/* Inner Div Configuration */
+#profile-card div, #education div, #work-experience div {
+    border: none;
+}
+
+/* Profile Card Configuration */
+#profile-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#profile-card h3 {
+    margin-left: 0.8rem;
+}
+#profile-card li {
+    text-align: center;
+    padding-right: 1.7rem;
+    background: url(/icons/plus-icon.png) var(--background-orientation-left), url(/icons/plus-icon.png) var(--background-orientation-right);
+    background-size: 15px;
+}
+
+/* Tech Stack Configuration */
+#tech-stack {
+    --tech-stack-circle-width: 15px;
+    --tech-stack-circle-height: 7.5px;
+    --green: rgba(0, 100, 0, 0.5);
+    --blue: rgba(0, 0, 100, 0.5);
+    --red: rgba(100, 0, 0, 0.5);
+}
+#tech-stack div {
+    border: none;
+    padding: 0;
+}
+
+#tech-stack-levels {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+#tech-stack-levels p {
+    margin-top: 0.5rem;
+}
+#beginner-level, #intermidiate-level, #advanced-level {
+    padding: var(--tech-stack-circle-height) var(--tech-stack-circle-width); 
+    border-radius: 5rem;
+}
+#beginner-level {
+    background-color: rgba(0, 200, 0, 0.5);
+}
+#intermidiate-level {
+    background-color: rgba(0, 0, 200, 0.5);
+}
+#advanced-level {
+    background-color: rgba(200, 0, 0, 0.5);
+}
+#tech-stack-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+#tech-stack-items a {
+    font-style: italic;
+}
+.beginner, .intermidiate, .advanced {
+    text-align: center;
+    width: 15ch;
+    border: var(--mini-border) solid var(--grey);
+    border-radius: var(--mid-border);
+    transition: 0.5s;
+}
+.beginner {
+    background-color: var(--green);
+}
+.intermidiate {
+    background-color: var(--blue);
+}
+.advanced {
+    background-color: var(--red);
+}
+.description {
+    display: none;
+    margin-top: 0.5rem;
+}
+
+/* Education & Work Experience Configuration */
+#education div {
+    padding: 0;
+}
+#education h4:not(first-child) {
+    margin-top: 1.5rem;
+}
+#education p, #work-experience p {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Work Experience Configuration */
+#work-experience {
+    border-bottom: none;
+}
+
+/* Lapton Screen Configuration */
+@media only screen and (min-width: 1000px) {
+    /* Image Configuration */
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Tech Stack COnfiguration */
+    .beginner:hover , .intermidiate:hover, .advanced:hover {
+        border-style: double;
+        border-width: var(--mid-border);
+        cursor: pointer;
+    }
+}
