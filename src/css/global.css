@@ -110,7 +110,7 @@ header nav {
     justify-content: center;
 }
 header a {
-    padding: 1rem 0.5rem;
+    padding: 0.7rem 0.5rem;
     transition: 5s;
 }
 header a:hover {
@@ -200,7 +200,7 @@ footer li {
         --text: 12px;
         color: var(--black);
         width: max-content;
-        padding: 1rem;
+        padding-top: 1.1rem;
     }
     #time {
         margin-right: 0.7rem;
@@ -216,7 +216,7 @@ footer li {
         column-gap: 12rem;
     }
     footer div {
-        height: 5.5rem;
+        height: max-content;
     }
 }
 
