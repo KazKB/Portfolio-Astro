@@ -78,7 +78,7 @@ import '../css/status.css';
 
 		<div id="tech-stack-items">
 			<div>
-				<p title="Javascript Framework" class="beginner" onclick="toggle(languageInfo[0])">Astro</p>
+				<p title="Javascript Framework" class="beginner">Astro</p>
 				<p class="description">
 					Astro is an all-in-one web framework for building fast, content-focused websites. 
 					<br>
@@ -87,7 +87,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Markup Language" class="beginner" onclick="toggle(languageInfo[1])">CSS</p>
+				<p title="Markup Language" class="beginner">CSS</p>
 				<p class="description">
 					CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, 
 					color, size, and spacing of your content, split it into multiple columns, or add animations and other 
@@ -98,7 +98,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Markup Language" class="beginner" onclick="toggle(languageInfo[2])">Html</p>
+				<p title="Markup Language" class="beginner">Html</p>
 				<p class="description">
 					HTML is a markup language that defines the structure of your content. HTML consists of a series of 
 					elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain
@@ -110,7 +110,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Programming Language" class="beginner" onclick="toggle(languageInfo[3])">Java</p>
+				<p title="Programming Language" class="beginner">Java</p>
 				<p class="description">
 					Java is a general-purpose, class-based, object-oriented programming language designed for having lesser 
 					implementation dependencies. It is a computing platform for application development. Java is fast, secure, 
@@ -122,7 +122,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Scripting Language" class="beginner" onclick="(languageInfo[4])">JavaScript</p>
+				<p title="Scripting Language" class="beginner">JavaScript</p>
 				<p class="description">
 					JavaScript is a scripting or programming language that allows you to implement complex features on web 
 					pages — every time a web page does more than just sit there and display static information for you to 
@@ -135,7 +135,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Scripting Language" class="beginner" onclick="toggle(languageInfo[5])">PHP</p>
+				<p title="Scripting Language" class="beginner">PHP</p>
 				<p class="description">
 					PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose 
 					scripting language that is especially suited for web development and can be embedded into HTML. 
@@ -201,25 +201,5 @@ import '../css/status.css';
 		</div>
 	</div>
 
-	<script is:inline>
-		// Age Calculation
-		const ageText = document.querySelector("#age");
-		const myAge = new Date().getTime() - new Date('2002-12-12').getTime();
-		ageText.innerHTML = "Level: " + Math.floor(myAge/(31557600000));
-
-		// The Tech Stack Interactivity
-		const languageInfo = document.querySelectorAll(".description");
-		const beginner = document.querySelectorAll(".beginner");
-
-		function toggle(description) {
-			if (description.style.display == "block")
-				description.style.display = "none";
-			else {
-				languageInfo.forEach(element => {
-					element.style.display = "none";
-				});
-				description.style.display = "block";
-			}
-		}
-	</script>
+	<script src="../javascript/status.js"></script>
 </BaseTemplate>
