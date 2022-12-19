@@ -24,7 +24,7 @@ function hideStackInfo() {
     });
 }
 
-for (const element in beginner) {
+for (let element = 0; element < beginner.length; element++) {
     beginner[element].addEventListener("click", function(){
         if (languageInfo[element].style.display == "block")
             languageInfo[element].style.display = "none";
