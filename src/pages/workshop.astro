@@ -1,9 +1,9 @@
 ---
-import Template from '../layouts/template.astro';
+import Template from '../layouts/Template.astro';
 import '../css/workshop.css';
 ---
 
-<Template client:visible link1="/#status" link2="/room" link3="/" name1="Status" name2="Hobbies" name3="Tavern" heading="Workshop" subHeading="Portfolio In The Making">
+<Template link1="/#status" link2="/room" link3="/" name1="Status" name2="Hobbies" name3="Tavern" heading="Workshop" subHeading="Portfolio In The Making">
     <p>
         Ah, hey there patron. I see you have found my workshop. Listed here are all the projects I 
         worked on.
@@ -95,5 +95,39 @@ import '../css/workshop.css';
         </p>
         <br>
         <a class="github" href="https://github.com/KazKB/OOSD-Finals" target="_blank"><span class="arrow-size">&lArr;</span>&nbsp;Github Repository Here&nbsp;<span class="arrow-size">&rArr;</span></a>
+    </div>
+
+    <hr>
+
+    <div id="progress">
+        <h2>Retro Tavern's Journey</h2>
+        <p>
+            At first Retro Tavern was originally going to be an autobiography with a house kind of naming sense, 
+            and a black and white theme. Meaning the pages would have been front door (homepage), bedroom (what 
+            falls under Status on this site), kitchen (eating habits, likes and dislikes), living room (hobbies/past 
+            times), and basement (what falls on workshop on this site). However, I scrapped the idea as I didn't 
+            have a good grasp on who I was, what I like, and my traits. Ironic isn't it. I didn't know who I was, 
+            yet <em>I knew who I was</em>. Technically, I still don't know myself to an extent, but I know enough 
+            for viewers to get a basic understanding. Anyway, that was since the 25<sup>th</sup> May, 2022. After 
+            I graduated from <abbr title="Antigua & Barbuda International Institute of Technology">ABIIT</abbr> I  
+            restarted my project. However, this time I changed from an autobiography to the current portfolio site. 
+            I started it on the 6<sup>th</sup> November, 2022. And I will be honest right now. I had no plan, and I 
+            still don't. I am 100% winging it. Designs come into my head at the randomest of times, and as I am free 
+            as a bird, I get to work when the thoughts designs appear. It can be right as I am about to go sleep or 
+            as I just wake up.
+            <br><br>
+            Currently the site is being created with the help of the Javascript Framework called Astro. I originally 
+            coded it the old fashion way in Visual Studio Code. That was until a good friend of mine introduced me to 
+            Astro. It was what I hoped the future of programming would be. Different languages and framesworks combined 
+            into one.
+            <br><br>
+            Down below are screenshots of the autobiography and the hard coded version.
+        </p>
+        <hr>
+        <h3>The Scrapped Autobiography</h3>
+        <img src="/images/draft-template.png" alt="The Scrapped Autobiography">
+        <hr>
+        <h3>The Portfolio Hard Coded</h3>
+        <img src="/images/first-template.png" alt="Portfolio Hard Coded">
     </div>
 </Template>

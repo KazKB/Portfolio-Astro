@@ -1,6 +1,6 @@
 ---
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../css/global.css';
 
 const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.props;
@@ -38,7 +38,18 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.pr
 
         <Footer/>
 
-        <!-- <script is:inline src="/javascript/header-footer.js"></script> -->
-        <script src="../javascript/header-footer.js"></script>
+        <script is:inline>
+            // Gets Computer Date & Time on Website Loading In
+            window.addEventListener("load", function() {
+                time();
+            });
+
+            // Constantly Retrieving Computer Time To Keep it Updated
+            function time() {
+                document.querySelector("#time").innerHTML = new Date().toLocaleTimeString();
+                document.querySelector("#date").innerHTML = new Date().toLocaleDateString();
+                setTimeout(time, 1000);
+            }
+        </script>
     </body>
 </html>

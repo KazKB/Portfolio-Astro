@@ -1,9 +1,9 @@
 ---
-import Template from '../layouts/template.astro';
+import Template from '../layouts/Template.astro';
 import '../css/status.css';
 ---
 
-<Template client:visible link1="#status" link2="/room" link3="/workshop" name1="Status" name2="Hobbies" name3="Workshop" heading="Retro Tavern" subHeading="Welcome Folks!">
+<Template link1="#status" link2="/room" link3="/workshop" name1="Status" name2="Hobbies" name3="Workshop" heading="Retro Tavern" subHeading="Welcome Folks!">
 	<p>
 		Hello my dear patron. My doors are open to any and everyone. I, Kaleel Boston, was not always interested 
 		in programming. But, as the years go by I got exposed to it. First at a little coding camp at my 
@@ -122,7 +122,7 @@ import '../css/status.css';
 			</div>
 			
 			<div>
-				<p title="Scripting Language" class="beginner" onclick="toggle(languageInfo[4])">JavaScript</p>
+				<p title="Scripting Language" class="beginner" onclick="(languageInfo[4])">JavaScript</p>
 				<p class="description">
 					JavaScript is a scripting or programming language that allows you to implement complex features on web 
 					pages — every time a web page does more than just sit there and display static information for you to 
@@ -201,6 +201,25 @@ import '../css/status.css';
 		</div>
 	</div>
 
-	<!-- <script is:inline src="/javascript/status.js"></script> -->
-	<script inline src="../javascript/status.js"></script>
+	<script is:inline>
+		// Age Calculation
+		const ageText = document.querySelector("#age");
+		const myAge = new Date().getTime() - new Date('2002-12-12').getTime();
+		ageText.innerHTML = "Level: " + Math.floor(myAge/(31557600000));
+
+		// The Tech Stack Interactivity
+		const languageInfo = document.querySelectorAll(".description");
+		const beginner = document.querySelectorAll(".beginner");
+
+		function toggle(description) {
+			if (description.style.display == "block")
+				description.style.display = "none";
+			else {
+				languageInfo.forEach(element => {
+					element.style.display = "none";
+				});
+				description.style.display = "block";
+			}
+		}
+	</script>
 </Template>

@@ -20,9 +20,9 @@
 }
 
 /* Each Project Similar Configuration */
-#otaku-paradise-website img, #otaku-paradise-app img, #object-orientated-software-design-finals img {
+#otaku-paradise-website img, #otaku-paradise-app img, #object-orientated-software-design-finals img, #progress img {
     display: block;
-    width: 340px;
+    width: 320px;
     margin: auto;
     object-fit: contain;
 }
@@ -42,10 +42,18 @@
     height: 500px;
 }
 
+/* Progress Configuration */
+#progress img:first-of-type {
+    height: 200px;
+}
+#progress img:last-of-type {
+    height: 300px;
+}
+
 /* Tablet Configuration */
 @media only screen and (min-width: 700px) {
     /* Each Project Similar Configuration */ 
-    #otaku-paradise-website img, #otaku-paradise-app img, #object-orientated-software-design-finals img {
+    #otaku-paradise-website img, #otaku-paradise-app img, #object-orientated-software-design-finals img, #progress img {
         width: 540px;
     }
 
@@ -62,5 +70,13 @@
     /* Object Orientated Software Design Finals Configuration */
     #object-orientated-software-design-finals img {
         height: 700px;
+    }
+
+    /* Progress Configuration */
+    #progress img:first-of-type {
+        height: 300px;
+    }
+    #progress img:last-of-type {
+        height: 500px;
     }
 }

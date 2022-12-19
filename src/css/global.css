@@ -69,6 +69,15 @@ body {
     color: white;
     font-family: "RPG-Font";
     text-transform: uppercase;
+    margin: 0;
+}
+sup {
+    text-transform: lowercase;
+}
+abbr {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1.5px;
 }
 a {
     color: white;
@@ -190,7 +199,7 @@ main a:hover, main li {
 footer {
     background-image: linear-gradient( var(--black), var(--dark-grey));
     padding: 1rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 footer a, footer li, footer p {
     font-weight: bold;
@@ -240,6 +249,7 @@ footer li {
         display: flex;
         justify-content: center;
         column-gap: 12rem;
+        padding-bottom: 0;
     }
     footer div {
         height: max-content;
