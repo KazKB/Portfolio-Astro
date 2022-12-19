@@ -93,9 +93,6 @@ main h4 {
     gap: 1rem;
     margin-bottom: 1rem;
 }
-#tech-stack-items a {
-    font-style: italic;
-}
 .beginner, .intermidiate, .advanced {
     text-align: center;
     width: 15ch;
