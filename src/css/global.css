@@ -199,7 +199,7 @@ main a:hover, main li {
 footer {
     background-image: linear-gradient( var(--black), var(--dark-grey));
     padding: 1rem;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 footer a, footer li, footer p {
     font-weight: bold;
