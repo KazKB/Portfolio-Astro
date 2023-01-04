@@ -1,6 +1,6 @@
 ---
-import HeaderTemplate from '../components/HeaderTemplate.astro';
-import FooterTemplate from '../components/FooterTemplate.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../css/global.css';
 
 const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.props;
@@ -26,7 +26,7 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.pr
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <HeaderTemplate link1={link1} link2={link2} link3={link3} name1={name1} name2={name2} name3={name3}/>
+        <Header link1={link1} link2={link2} link3={link3} name1={name1} name2={name2} name3={name3}/>
 
         <main>
             <div id="center-div">
@@ -36,7 +36,7 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading} = Astro.pr
             </div>
         </main>
 
-        <FooterTemplate/>
+        <Footer/>
 
         <script src="../javascript/header-footer.js"></script>
     </body>
