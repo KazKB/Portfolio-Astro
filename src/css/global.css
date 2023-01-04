@@ -125,7 +125,7 @@ header, footer, header a, footer a {
 
 /* Header Configuration */
 header {
-    background-image: linear-gradient( var(--dark-grey), var(--black));
+    background-image: linear-gradient( var(--grey), var(--black));
 }
 header nav {
     display: flex;
@@ -191,7 +191,7 @@ main a:hover {
 
 /* Footer Configuration */
 footer {
-    background-image: linear-gradient( var(--black), var(--dark-grey));
+    background-image: linear-gradient( var(--black), var(--grey));
     padding: 1rem;
     padding-top: 2rem;
 }
