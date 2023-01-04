@@ -52,8 +52,7 @@
     width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--grey);
-    border-radius: 1rem;
+    background-color: var(--black);
     margin: 0.5rem 0;
 }
 ::-webkit-scrollbar-thumb {
@@ -162,7 +161,7 @@ main li {
     background-size: var(--li-background-size);
 }
 main a:hover {
-    color: white;
+    color: var(--purple-2);
 }
 #center-div {
     padding: 1rem;
