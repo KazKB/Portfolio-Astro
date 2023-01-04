@@ -37,6 +37,7 @@
     /* Background Related */
     --background-orientation-left: no-repeat left;
     --background-orientation-right: no-repeat right;
+    --li-background-size: 17px;
 }
 
 /* Custom Font */
@@ -69,7 +70,7 @@ body {
     color: white;
     font-family: "RPG-Font";
     text-transform: uppercase;
-    margin: 0;
+    margin: 0; /* Astro Adds Margin To Body */
 }
 sup {
     text-transform: lowercase;
@@ -80,7 +81,7 @@ abbr {
     text-decoration-thickness: 1.5px;
 }
 a {
-    color: white;
+    color: var(--purple);
     text-decoration: none;
     transition: 1s;
 }
@@ -113,18 +114,12 @@ h1, h2, h3, h4 {
     margin-bottom: 0.5rem;
     font-weight: normal;
 }
-h1, h2 {
-    line-height: 1.7rem;
-}
-h3, h4, p, li {
+h1, h2, h3, h4, p, a, li {
     line-height: 1.5rem;
 }
 
 /* Header & Footer Similarities */
-header, footer {
-    color: var(--black);
-}
-header a, footer a {
+header, footer, header a, footer a {
     color: var(--black);
 }
 
@@ -144,7 +139,6 @@ header a h3 {
     margin: 1rem 0;
 }
 header a:hover {
-    color: var(--black);
     text-decoration: underline;
     text-decoration-color: var(--dark-grey);
     text-decoration-skip-ink: none;
@@ -161,13 +155,14 @@ main h2, .sub-heading, main h3 {
     -webkit-text-stroke: 0.5px var(--purple-2);
 }
 main li {
-    padding-top: 0.15rem;
-    padding-left: 2rem;
-    background: url(/icons/plus-icon.png) var(--background-orientation-left);
-    background-size: 15px;
-}
-main a:hover, main li {
     color: var(--purple);
+    padding-top: 0.1rem;
+    padding-left: 1.5rem;
+    background: url(/icons/plus-icon.png) var(--background-orientation-left);
+    background-size: var(--li-background-size);
+}
+main a:hover {
+    color: white;
 }
 #center-div {
     padding: 1rem;
@@ -179,7 +174,6 @@ main a:hover, main li {
     background-size: 10px;
 }
 #heading {
-    text-align: center;
     background: url(/icons/purple-heart.png) var(--background-orientation-left), url(/icons/purple-heart-reversed.png) var(--background-orientation-right);
     background-size: 30px;
     animation: heading 5s ease-in-out infinite alternate;
@@ -233,7 +227,6 @@ footer li {
     #time, #date {
         display: block;
         --text: 12px;
-        color: var(--black);
         width: max-content;
         padding-top: 0.7rem;
     }

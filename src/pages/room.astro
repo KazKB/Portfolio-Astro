@@ -1,6 +1,7 @@
 ---
 import BaseTemplate from '../layouts/BaseTemplate.astro';
 import '../css/room.css';
+import Media from '../components/Media.astro';
 ---
 
 <BaseTemplate link1="/#status" link2="/" link3="/workshop" name1="Status" name2="Tavern" name3="Workshop" heading="Hobbies" subHeading="Kaleel's Room">
@@ -162,40 +163,15 @@ import '../css/room.css';
         <h3>My Favs</h3>
         <br>
         <div id="fav-animation">
-            <div>
-                <img src="/images/Haiyuu-Cover-Image.jpg" alt="Haikyuu!! Cover Image">
-                <h4>Haikyu!!</h4>
-            </div>
-            <div>
-                <img src="/images/Hai-To-Gensou-No-Grimgar-Cover-Image.jpg" alt="Hai to Gensou no Grimgar Cover Image">
-                <h4>Hai to Gensou no Grimgar</h4>
-            </div>
-            <div>
-                <img src="/images/Log-Horizon-Cover-Image.jpg" alt="Log Horizon Cover Image">
-                <h4>Log Horizon</h4>
-            </div>
-            <div>
-                <img src="/images/Nejimaki-Seirei-Senki-Tenkyou-No-Alderamin-Anime-Cover-Image.jpg" alt="Nejimaki Seirei Senki: Tenkyou no Alderamin Cover Image">
-                <h4>Nejimaki Seirei Senki: Tenkyou no Alderamin</h4>
-            </div>
-            <div>
-                <img src="/images/Rokka-No-Yuusha-Cover-Image.jpg" alt="Rokka no Yuusha Cover Image">
-                <h4>Rokka no Yuusha</h4>
-            </div>
-            <div>
-                <img src="/images/Seishun-Buta-Yarou-Wa-Bunny-Girl-Senpai-No-Yume-Wo-Minai-Cover-Image.jpg" alt="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai Cover Image">
-                <h4>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai</h4>
-            </div>
-            <div>
-                <img src="/images/Witch-Craft-Works-Cover-Image.jpg" alt="Witch Craft Works Cover Image">
-                <h4>Witch Craft Works</h4>
-            </div>
-            <div>
-                <img src="/images/Yahari-Ore-No-Seishun-Love-Comedy-Wa-Machigatteiru.-Cover-Image.jpg" alt="Yahari Ore no Seishun Love Comedy wa Machigatteiru. Cover Image">
-                <h4>Yahari Ore no Seishun Love Comedy wa Machigatteiru.</h4>
-            </div>
+            <Media src="Haiyuu-Cover-Image.jpg" name="Haikyu!!"/>
+            <Media src="Hai-To-Gensou-No-Grimgar-Cover-Image.jpg" name="Hai to Gensou no Grimgar"/>
+            <Media src="Log-Horizon-Cover-Image.jpg" name="Log Horizon"/>
+            <Media src="Nejimaki-Seirei-Senki-Tenkyou-No-Alderamin-Anime-Cover-Image.jpg" name="Nejimaki Seirei Senki: Tenkyou no Alderamin"/>
+            <Media src="Rokka-No-Yuusha-Cover-Image.jpg" name="Rokka no Yuusha"/>
+            <Media src="Seishun-Buta-Yarou-Wa-Bunny-Girl-Senpai-No-Yume-Wo-Minai-Cover-Image.jpg" name="Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai"/>
+            <Media src="Witch-Craft-Works-Cover-Image.jpg" name="Witch Craft Works"/>
+            <Media src="Yahari-Ore-No-Seishun-Love-Comedy-Wa-Machigatteiru.-Cover-Image.jpg" name="Yahari Ore no Seishun Love Comedy wa Machigatteiru."/>
         </div>
-        
         <br>
         <p class="center-text">I recommed giving one of my favs a try</p>
     </div>
@@ -278,34 +254,13 @@ import '../css/room.css';
         <h3>My Favs</h3>
         <br>
         <div id="fav-written-media">
-            <div>
-                <img src="/images/Dungeon-Seeker-Cover-Image.jpg" alt="Dungeon Seeker Cover Image">
-                <h4>Dungeon Seeker</h4>
-            </div>
-            <div>
-                <img src="/images/Kuzumi-kun-Kuuki-Yometemasu-Ka-Cover-Image.jpg" alt="Kuzumi-kun, Kuuki Yometemasu ka? Cover Image">
-                <h4>Kuzumi-kun, Kuuki Yometemasu ka?</h4>
-            </div>
-            <div>
-                <img src="/images/Nejimaki-Seirei-Senki-Tenkyou-No-Alderamin-Manga-Cover-Image.jpg" alt="Nejimaki Seirei Senki: Tenkyou no Alderamin Cover Image">
-                <h4>Nejimaki Seirei Senki: Tenkyou no Alderamin</h4>
-            </div>
-            <div>
-                <img src="/images/Ore-Wo-Suki-Na-No-Wa-Omae-Dake-Ka -Yo-Cover-Image.jpg" alt="Ore wo Suki na no wa Omae dake ka yo Cover Image">
-                <h4>Ore wo Suki na no wa Omae dake ka yo</h4>
-            </div>
-            <div>
-                <img src="/images/Ojojojo-Cover-Image.jpg" alt="Ojojojo Cover Image">
-                <h4>Ojojojo</h4>
-            </div>
-            <div>
-                <img src="/images/Shinu-Hodo-Kimi-No-Shojo-Ga-Hoshii-Cover-Image.jpg" alt="Shinu Hodo Kimi no Shojo ga Hoshii Cover Image">
-                <h4>Shinu Hodo Kimi no Shojo ga Hoshii</h4>
-            </div>
-            <div>
-                <img src="/images/Yakushoku-Distopiary-Cover-Image.jpg" alt="Yakushoku Distopiary Cover Image">
-                <h4>Yakushoku Distopiary</h4>
-            </div>
+            <Media src="Dungeon-Seeker-Cover-Image.jpg" name="Dungeon Seeker"/>
+            <Media src="Kuzumi-kun-Kuuki-Yometemasu-Ka-Cover-Image.jpg" name="Kuzumi-kun, Kuuki Yometemasu ka?"/>
+            <Media src="Nejimaki-Seirei-Senki-Tenkyou-No-Alderamin-Manga-Cover-Image.jpg" name="Nejimaki Seirei Senki: Tenkyou no Alderamin"/>
+            <Media src="Ore-Wo-Suki-Na-No-Wa-Omae-Dake-Ka -Yo-Cover-Image.jpg" name="Ore wo Suki na no wa Omae dake ka yo"/>
+            <Media src="Ojojojo-Cover-Image.jpg" name="Ojojojo"/>
+            <Media src="Shinu-Hodo-Kimi-No-Shojo-Ga-Hoshii-Cover-Image.jpg" name="Shinu Hodo Kimi no Shojo ga Hoshii"/>
+            <Media src="Yakushoku-Distopiary-Cover-Image.jpg" name="Yakushoku Distopiary"/>
         </div>
     </div>
 </BaseTemplate>

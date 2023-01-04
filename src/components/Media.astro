@@ -1,0 +1,8 @@
+---
+const {src, name} = Astro.props;
+---
+
+<div>
+    <img src={`/images/${src}`} alt={`${name} Cover Image`}>
+    <h4>{name}</h4>
+</div>

@@ -1,0 +1,12 @@
+---
+const {category, level, name, description, src} = Astro.props;
+---
+
+<div>
+    <p title={category} class={`${level} tech-stack-item`}>{name}</p>
+    <p class="description">
+        {description}
+        <br>
+        <a href={src} target="_blank">More info can be found here.</a>
+    </p>
+</div>

@@ -27,40 +27,23 @@ main h4 {
     text-align: left;
 }
 
-/* Inner Div Configuration */
-#profile-card div, #education div, #work-experience div {
-    border: none;
-}
-
 /* Profile Card Configuration */
 #profile-card {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
-}
-#profile-card h3 {
-    margin-left: 0.8rem;
 }
 #profile-card li {
     text-align: center;
-    padding-right: 1.7rem;
+    padding: 0 1.5rem;
     background: url(/icons/plus-icon.png) var(--background-orientation-left), url(/icons/plus-icon.png) var(--background-orientation-right);
-    background-size: 15px;
+    background-size: var(--li-background-size);
 }
 
 /* Tech Stack Configuration */
 #tech-stack {
-    --tech-stack-circle-width: 15px;
-    --tech-stack-circle-height: 7.5px;
-    --green: rgba(0, 100, 0, 0.5);
-    --blue: rgba(0, 0, 100, 0.5);
-    --red: rgba(100, 0, 0, 0.5);
+    margin-bottom: 1rem;
 }
-#tech-stack div {
-    border: none;
-    padding: 0;
-}
-
 #tech-stack-levels {
     display: flex;
     justify-content: center;
@@ -72,14 +55,14 @@ main h4 {
 #tech-stack-levels p {
     margin-top: 0.5rem;
 }
-#beginner-level, #intermidiate-level, #advanced-level {
-    padding: var(--tech-stack-circle-height) var(--tech-stack-circle-width); 
+#beginner-level, #intermediate-level, #advanced-level {
+    padding: 7.5px 15px; 
     border-radius: 5rem;
 }
 #beginner-level {
     background-color: rgba(0, 200, 0, 0.5);
 }
-#intermidiate-level {
+#intermediate-level {
     background-color: rgba(0, 0, 200, 0.5);
 }
 #advanced-level {
@@ -91,9 +74,11 @@ main h4 {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
-.beginner, .intermidiate, .advanced {
+#tech-stack-items a {
+    text-decoration: underline;
+}
+.tech-stack-item {
     text-align: center;
     width: 15ch;
     border: var(--mini-border) solid var(--grey);
@@ -101,13 +86,13 @@ main h4 {
     transition: 0.5s;
 }
 .beginner {
-    background-color: var(--green);
+    background-color: rgba(0, 100, 0, 0.5);
 }
-.intermidiate {
-    background-color: var(--blue);
+.intermediate {
+    background-color: rgba(0, 0, 100, 0.5);
 }
 .advanced {
-    background-color: var(--red);
+    background-color: rgba(100, 0, 0, 0.5);
 }
 .description {
     display: none;
@@ -115,20 +100,12 @@ main h4 {
 }
 
 /* Education & Work Experience Configuration */
-#education div {
-    padding: 0;
-}
 #education h4:not(first-child) {
     margin-top: 1.5rem;
 }
 #education p, #work-experience p {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-}
-
-/* Work Experience Configuration */
-#work-experience {
-    border-bottom: none;
 }
 
 /* Lapton Screen Configuration */
@@ -140,7 +117,7 @@ main h4 {
     }
 
     /* Tech Stack COnfiguration */
-    .beginner:hover , .intermidiate:hover, .advanced:hover {
+    .tech-stack-item:hover {
         border-style: double;
         border-width: var(--mid-border);
         cursor: pointer;
