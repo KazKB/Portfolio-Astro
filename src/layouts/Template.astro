@@ -4,12 +4,12 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../css/global.css';
 
-const {link1, link2, link3, name1, name2, name3, heading, subHeading, description} = Astro.props;
+const {link1, link2, link3, name1, name2, name3, heading, subHeading, description, keyword} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-    <Head heading={heading} description={description}/>
+    <Head heading={heading} description={description} keyword={keyword}/>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
