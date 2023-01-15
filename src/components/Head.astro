@@ -1,5 +1,5 @@
 ---
-const {heading, description} = Astro.props;
+const {heading, description, keyword} = Astro.props;
 ---
 
 <head>
@@ -8,6 +8,7 @@ const {heading, description} = Astro.props;
     <title>{heading}</title>
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description}>
+    <meta name="keyword" content={keyword}>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/icons/tavern-sign-icon.svg" type="image/x-icon">
 </head>
