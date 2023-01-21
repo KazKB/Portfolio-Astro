@@ -197,7 +197,7 @@ footer {
 footer a, footer li, footer p {
     font-weight: bold;
 }
-footer div:first-child {
+footer address:first-child {
     margin-bottom: 1.5rem;
 }
 footer li {
@@ -243,7 +243,7 @@ footer li {
         column-gap: 12rem;
         padding-bottom: 0;
     }
-    footer div {
+    footer address {
         height: max-content;
     }
 }
