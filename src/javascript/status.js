@@ -15,7 +15,7 @@ function hideStackInfo() {
 }
 
 // Cycles Through Each Tech Stack Item's Description And Hides If Shown
-// Else If It Is The One Clicked Show It's Info
+// Else If It Is The One That Is Clicked Show It's Info
 for (let element = 0; element < stackItem.length; element++) {
     stackItem[element].addEventListener("click", function() {
         if (languageInfo[element].style.display == "block")

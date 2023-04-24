@@ -107,6 +107,9 @@ main h4 {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
+#education hr, #work-experience hr {
+    border-width: 0.001rem;
+}
 
 /* Lapton Screen Configuration */
 @media only screen and (min-width: 1000px) {
