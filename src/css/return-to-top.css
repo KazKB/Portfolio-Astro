@@ -1,0 +1,20 @@
+/* Return To Top Button */
+.scroll {
+    position: fixed;
+    z-index: 1;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: rgba(100,100,100,0.5);
+    color: var(--purple);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.scroll:hover {
+    background-color:rgba(100,100,100,0.9);
+    color: var(--purple-2);
+}
+.hidden {
+    display: none;
+}

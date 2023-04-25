@@ -17,6 +17,8 @@
 }
 .arrow-size {
     animation: arrows 1s linear infinite alternate;
+    padding: 0.5rem;
+    font-size: var(--text);
 }
 
 /* Each Project Similar Configuration */

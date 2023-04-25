@@ -1,21 +1,33 @@
 ---
-import Head from '../components/Head.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import '../css/global.css';
+import '../css/return-to-top.css';
 
 const {link1, link2, link3, name1, name2, name3, heading, subHeading, description, keyword} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-    <Head heading={heading} description={description} keyword={keyword}/>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>{heading}</title>
+        <meta name="generator" content={Astro.generator} />
+        <meta name="author" content="Kaleel Boston">
+        <meta name="description" content={description}>
+        <meta name="keyword" content={keyword}>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/icons/tavern-sign-icon.svg" type="image/x-icon">
+    </head>
 
-        <Header link1={link1} link2={link2} link3={link3} name1={name1} name2={name2} name3={name3}/>
+    <body>
+        <header>
+            <nav>
+                <p id="time"></p>
+                <a href={link1}><h3>{name1}</h3></a>
+                <a href={link2}><h3>{name2}</h3></a>
+                <a href={link3}><h3>{name3}</h3></a>
+                <p id="date"></p>
+            </nav>
+        </header>
 
         <main>
             <div id="center-div">
@@ -25,8 +37,24 @@ const {link1, link2, link3, name1, name2, name3, heading, subHeading, descriptio
             </div>
         </main>
 
-        <Footer/>
+        <footer>
+            <address>
+                <p>Contact Me At:</p> 
+                <li title="Discord ID" id="discord">Discord: KazKB#3454</li>
+                <li title="Email Address" id="email">Email: <a href="mailto: kaleelboston@gmail.com">kaleelboston@gmail.com</a></li>
+                <li title="Phone Number" id="phone">Phone: <a href="tel: +44 7308 558870">+44 7308 558870</a></li>
+            </address>
+            
+            <address>
+                <p>
+                    Current Residence:<br>
+                    N22 7SR<br>
+                    United Kingdom
+                </p>
+            </address>
+        </footer>
 
         <script src="../javascript/header-footer.js"></script>
+        <script src="../javascript/return-to-top.js"></script>
     </body>
 </html>
