@@ -87,6 +87,10 @@ li {
     list-style: none;
     margin-bottom: 0.5rem;
 }
+ul {
+    margin: 0;
+    margin-left: -2.5rem;
+}
 hr {
     border-width: var(--mini-border);
     border-color: var(--grey);
@@ -128,6 +132,7 @@ header {
 header nav {
     display: flex;
     justify-content: center;
+    align-self: center;
 }
 header a {
     padding: 0.5rem 0.5rem;
