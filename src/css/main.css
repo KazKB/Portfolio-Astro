@@ -22,6 +22,7 @@ main a:hover {
 #heading {
     background-size: 30px;
     color: var(--purple);
+    -webkit-text-stroke: 1px var(--black);
 }
 .center-text {
     text-align: center;
