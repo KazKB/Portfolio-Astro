@@ -17,7 +17,7 @@ main a {
     color: var(--purple);
 }
 main a:hover {
-    color: var(--purple);
+    -webkit-text-stroke: 0.5px var(--grey-2);
 }
 #heading {
     background-size: 30px;

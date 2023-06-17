@@ -18,11 +18,8 @@ main h4 {
 #profile-card {
     padding-bottom: 0.1rem;
 }
-#profile-card li {
+#profile-card p {
     text-align: center;
-    padding: 0rem;
-    background: url(/icons/plus-icon.png) var(--background-orientation-left), url(/icons/plus-icon.png) var(--background-orientation-right);
-    background-size: 17px;
 }
 
 /* Tech Stack Configuration */
