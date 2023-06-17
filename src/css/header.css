@@ -1,0 +1,39 @@
+header {
+    background-image: linear-gradient( var(--grey-2), var(--grey));
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header a {
+    padding: 0.5rem;
+}
+header a h3 {
+    margin-bottom: 1rem;
+}
+header a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--grey-2);
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 3px;
+}
+
+#time, #date {
+    display: none;
+    font-weight: bold;
+}
+
+/* Tablet Screen Configuration */
+@media only screen and (min-width: 700px) {
+    #time, #date {
+        display: block;
+        width: max-content;
+        padding-top: 0.97rem;
+    }
+    #time {
+        margin-right: 1rem;
+    }
+    #date {
+        margin-left: 1rem;
+    }
+}

@@ -1,0 +1,54 @@
+footer {
+    background-image: linear-gradient( var(--grey), var(--grey-2));
+    padding: 1rem;
+    padding-top: 2rem;
+}
+footer a, footer li, footer p {
+    font-weight: bold;
+    color: var(--black);
+}
+footer address {
+    font-style: normal;
+}
+footer address:first-child {
+    margin-bottom: 1.5rem;
+}
+footer li {
+    padding-top: 0.1rem;
+    padding-left: 2rem;
+}
+#discord {
+    background: url(/icons/discord-icon.png) var(--background-orientation-left);
+}
+#email {
+    background: url(/icons/email-icon.png) var(--background-orientation-left);
+}
+#phone {
+    background: url(/icons/phone-icon.png) var(--background-orientation-left);
+    background-size: 20px;
+    margin-left: 0.2rem;
+    padding-left: 1.8rem;
+}
+#discord, #email {
+    background-size: 24px;
+}
+
+/* Tablet Screen Configuration */
+@media only screen and (min-width: 700px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        column-gap: 12rem;
+        padding-bottom: 0;
+    }
+    footer address {
+        height: max-content;
+    }
+}
+
+/* Laptop Screen Configuration */
+@media only screen and (min-width: 1000px) { 
+    footer {
+        column-gap: 25rem;
+    }
+}

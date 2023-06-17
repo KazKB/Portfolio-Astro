@@ -1,13 +1,4 @@
 /* Animation */
-@keyframes image {
-    from {
-        border-color: var(--dark-grey);
-    }
-
-    to {
-        border-color: var(--purple-2);
-    }
-}
 @keyframes null {
     from {
         border-color: var(--dark-grey);
@@ -15,8 +6,8 @@
     }
 
     to {
-        border-color: var(--purple-2);
-        color: var(--purple-2);
+        border-color: var(--purple);
+        color: var(--purple);
     }
 }
 
@@ -27,9 +18,8 @@ img {
     height: 150px;
     margin: auto; /* For Those Outside Of The Image-Center Class */
     border-radius: 0.5rem;
-    border: var(--mid-border) double var(--grey);
-    animation: image 1.5s linear infinite alternate;
-    object-fit: contain;
+    border: var(--mid-border) groove var(--purple);
+    object-fit: contain; /* Prevents Images From Being Stretched & Fit Without Being Resized */
     background-color: white;
 }
 .image-center {
@@ -49,7 +39,7 @@ img {
     background-color: white;
     color: var(--dark-grey);
     font-size: 30px;
-    margin: auto    ;
+    margin: auto;
 }
 
 /* Animation & Written Media Configuration */
@@ -68,7 +58,7 @@ img {
 }
 #fav-animation div, #fav-written-media div {
     width: 150px;
-    height: max-content;
+    height: max-content;/* Images Have Same Dimensions, So It Scales With One Dimension Being Edited */
 }
 
 /* Tablet Screen Configuration */

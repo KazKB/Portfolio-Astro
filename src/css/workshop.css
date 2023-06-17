@@ -21,27 +21,12 @@
     font-size: var(--text);
 }
 
-/* Each Project Similar Configuration */
+/* Image Configuration */
 .workshop-item img {
     display: block;
     width: 320px;
     margin: auto;
     object-fit: contain;
-}
-
-/* Otaku Paradise (Website) Configuration */
-#otaku-paradise-website img {
-    height: 420px;
-}
-
-/* Otaku Paradise (App) Configuration */
-#otaku-paradise-app img {
-    height: 550px;
-}
-
-/* Object Orientated Software Design Finals Configuration */
-#object-orientated-software-design-finals img {
-    height: 500px;
 }
 
 /* Progress Configuration */
@@ -54,26 +39,11 @@
 
 /* Tablet Configuration */
 @media only screen and (min-width: 700px) {
-    /* Each Project Similar Configuration */ 
+    /* Image Configuration */ 
     .workshop-item img {
         width: 540px;
     }
-
-    /* Otaku Paradise (Website) Configuration */
-    #otaku-paradise-website img {
-        height: 620px;
-    }
-
-    /* Otaku Paradise (App) Configuration */
-    #otaku-paradise-app img {
-        height: 750px;
-    }
-
-    /* Object Orientated Software Design Finals Configuration */
-    #object-orientated-software-design-finals img {
-        height: 700px;
-    }
-
+    
     /* Progress Configuration */
     #progress img:first-of-type {
         height: 300px;

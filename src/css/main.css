@@ -1,0 +1,42 @@
+/* Main Configuration */
+main {
+    padding: 1rem;
+    margin: auto;
+    border-left: var(--mini-border) solid var(--purple);
+    border-right: var(--mini-border) solid var(--purple);
+    background-size: 10px;
+}
+main h2, .sub-heading, main h3, main h4 {
+    color: var(--purple);
+    letter-spacing: 0.2rem;
+}
+main p {
+    letter-spacing: 0.05rem;
+}
+main a {
+    color: var(--purple);
+}
+main a:hover {
+    color: var(--purple);
+}
+#heading {
+    background-size: 30px;
+    color: var(--purple);
+}
+.center-text {
+    text-align: center;
+}
+.sub-heading {
+    text-align: left; 
+    margin-top: 1rem;
+}
+.arrow-size {
+    font-size: 18px;
+}
+
+/* Laptop Screen Configuration */
+@media only screen and (min-width: 1000px) { 
+    main {
+        max-width: 70ch;
+    }
+}

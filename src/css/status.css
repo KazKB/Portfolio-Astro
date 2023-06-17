@@ -1,14 +1,3 @@
-/* Animation */
-@keyframes image {
-    from {
-        border-color: var(--dark-grey);
-    }
-
-    to {
-        border-color: var(--purple-2);
-    }
-}
-
 /* Image Configuration */
 img {
     display: block;
@@ -16,10 +5,8 @@ img {
     height: 200px;
     margin: auto;
     margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    border: var(--mid-border) double var(--grey);
-    animation: image 1.5s linear infinite alternate;
-    background-color: white;
+    border-radius: var(--mid-border);
+    border: var(--mid-border) groove var(--purple);
 }
 
 /* Main Configuration */
@@ -29,15 +16,13 @@ main h4 {
 
 /* Profile Card Configuration */
 #profile-card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding-bottom: 0.1rem;
 }
 #profile-card li {
     text-align: center;
-    padding: 0 1.5rem;
+    padding: 0rem;
     background: url(/icons/plus-icon.png) var(--background-orientation-left), url(/icons/plus-icon.png) var(--background-orientation-right);
-    background-size: var(--li-background-size);
+    background-size: 17px;
 }
 
 /* Tech Stack Configuration */
@@ -81,9 +66,8 @@ main h4 {
 .tech-stack-item {
     text-align: center;
     width: 15ch;
-    border: var(--mini-border) solid var(--grey);
+    border: var(--mini-border) solid var(--grey-2);
     border-radius: var(--mid-border);
-    transition: 0.5s;
 }
 .beginner {
     background-color: rgba(0, 100, 0, 0.5);
@@ -110,7 +94,7 @@ main h4 {
     border-width: 0.001rem;
 }
 
-/* Lapton Screen Configuration */
+/* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) {
     /* Image Configuration */
     img {
@@ -118,10 +102,12 @@ main h4 {
         height: 300px;
     }
 
-    /* Tech Stack COnfiguration */
+    /* Tech Stack Configuration */
     .tech-stack-item:hover {
-        border-style: double;
+        border-style: groove;
         border-width: var(--mid-border);
         cursor: pointer;
+        position: relative;
+        top: -0.2rem; /* To Prevent The Tech Stack Item From Moving When Border Style Is Changed */
     }
 }
