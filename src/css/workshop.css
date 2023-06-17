@@ -14,7 +14,9 @@
     font-style: normal;
     width: 100%;
     text-align: center;
+    color: var(--purple);
 }
+
 .arrow-size {
     animation: arrows 1s linear infinite alternate;
     padding: 0.5rem;
@@ -43,7 +45,7 @@
     .workshop-item img {
         width: 540px;
     }
-    
+
     /* Progress Configuration */
     #progress img:first-of-type {
         height: 300px;

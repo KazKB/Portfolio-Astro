@@ -9,20 +9,18 @@ main {
 main h2, .sub-heading, main h3, main h4 {
     color: var(--purple);
     letter-spacing: 0.2rem;
+    -webkit-text-stroke: 1px var(--black);
 }
 main p {
     letter-spacing: 0.05rem;
 }
-main a {
-    color: var(--purple);
-}
 main a:hover {
-    -webkit-text-stroke: 0.5px var(--grey-2);
+    color: var(--purple);
 }
 #heading {
     background-size: 30px;
     color: var(--purple);
-    /* -webkit-text-stroke: 1px var(--black); */
+    -webkit-text-stroke: 1px var(--black);
 }
 .center-text {
     text-align: center;
@@ -39,5 +37,9 @@ main a:hover {
 @media only screen and (min-width: 1000px) { 
     main {
         max-width: 70ch;
+    }
+
+    main h2, #heading, .sub-heading, main h3, main h4 {
+        -webkit-text-stroke: 0;
     }
 }

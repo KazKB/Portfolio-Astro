@@ -54,6 +54,7 @@ abbr {
     text-decoration-thickness: 1.5px;
 }
 a {
+    color: var(--white);
     text-decoration: none;
 }
 li {    
