@@ -2,8 +2,8 @@
 main {
     padding: 1rem;
     margin: auto;
-    border-left: var(--mini-border) solid var(--purple);
-    border-right: var(--mini-border) solid var(--purple);
+    border-left: var(--mini-border) solid var(--grey-2);
+    border-right: var(--mini-border) solid var(--grey-2);
     background-size: 10px;
 }
 main h2, .sub-heading, main h3, main h4 {
@@ -22,7 +22,7 @@ main a:hover {
 #heading {
     background-size: 30px;
     color: var(--purple);
-    -webkit-text-stroke: 1px var(--black);
+    /* -webkit-text-stroke: 1px var(--black); */
 }
 .center-text {
     text-align: center;
