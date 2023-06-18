@@ -4,7 +4,7 @@
     --grey: #242424;
     --grey-2: #858585;
     --black: #010101;
-    --purple: #5900ba;
+    --purple: #8212c2;
 
     /* Fonts */
     --text: 12px;
@@ -104,12 +104,6 @@ header, footer, header a, footer a {
 
 /* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) { 
-
-    body {
-        --purple: #8212c2;
-        /* color: var(--purple); */
-    }
-
     a {
         transition: 1s;
     }
