@@ -26,7 +26,6 @@
 
 /* Scroll Bar Configuration */
 ::-webkit-scrollbar {
-    z-index: 1;
     width: 15px;
 }
 ::-webkit-scrollbar-track {
