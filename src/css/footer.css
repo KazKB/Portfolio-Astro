@@ -2,8 +2,6 @@ footer {
     background-image: linear-gradient( var(--grey), var(--grey-2));
     padding: 1rem;
     padding-top: 2rem;
-}
-footer a, footer li, footer p {
     font-weight: bold;
     color: var(--black);
 }
@@ -18,8 +16,7 @@ footer address:first-child {
     margin-bottom: 2rem;
 }
 footer li {
-    padding-top: 0.1rem;
-    padding-left: 2rem;
+    padding-left: 1.75rem;
 }
 #discord {
     background: url(/icons/discord-icon.png) var(--background-orientation-left);
@@ -53,6 +50,6 @@ footer li {
 /* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) { 
     footer {
-        column-gap: 22rem;
+        column-gap: 21rem;
     }
 }

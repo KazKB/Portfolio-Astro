@@ -1,16 +1,3 @@
-/* Animation */
-@keyframes null {
-    from {
-        border-color: var(--dark-grey);
-        color: var(--dark-grey);
-    }
-
-    to {
-        border-color: var(--purple);
-        color: var(--purple);
-    }
-}
-
 /* Image Configuration */
 img {
     display: block;
@@ -18,7 +5,7 @@ img {
     height: 150px;
     margin: auto; /* For Those Outside Of The Image-Center Class */
     border-radius: 0.5rem;
-    border: var(--mid-border) groove var(--purple);
+    border: var(--mid) groove var(--purple);
     object-fit: contain; /* Prevents Images From Being Stretched & Fit Without Being Resized */
     background-color: white;
 }
@@ -33,11 +20,10 @@ img {
 /* Null Configuration */
 .null {
     padding: 50px 40px;
-    animation: null 1.5s linear infinite alternate;
     border-radius: 0.5rem;
-    border: var(--mid-border) double var(--grey);
+    border: var(--mid) double var(--purple);
     background-color: white;
-    color: var(--dark-grey);
+    color: var(--purple);
     font-size: 30px;
     margin: auto;
 }

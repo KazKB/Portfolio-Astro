@@ -10,8 +10,8 @@
     --text: 12px;
 
     /* Sizes */
-    --mini-border: 0.1rem;
-    --mid-border: 0.3rem;
+    --mini: 0.1rem;
+    --mid: 0.3rem;
 
     /* Background Related */
     --background-orientation-left: no-repeat left;
@@ -69,7 +69,7 @@ ul {
     padding: 0;
 }
 hr {
-    border: var(--mini-border) inset var(--grey-2);
+    border: var(--mini) inset var(--grey-2);
 }
 h1 {
     font-size: 26px;

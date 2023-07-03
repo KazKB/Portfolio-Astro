@@ -1,47 +1,45 @@
 ---
 import Template from '../layouts/Template.astro';
-import '../css/status.css';
+import '../css/profile.css';
 import TechStackItem from '../components/TechStackItem.astro';
 import TechStackLevel from '../components/TechStackLevel.astro';
 ---
 
-<Template link1="#status" link2="/room" link3="/workshop" name1="Status" name2="Hobbies" name3="Workshop" heading="Retro Tavern" subHeading="Welcome Folks!" description="Basic information of Kaleel Boston such as his basic stats, tech stack, eductaion, and work experience!" keyword="Retro Tavern, Status, Tech Stack, Education, Work Experience, Kaleel Boston, Kaleel, Boston">
+<Template link1="/hobbies" link2="/workshop" name1="Hobbies" name2="Workshop" heading="Kaleel Boston"description="Basic information of Kaleel Boston such as his basic stats, tech stack, eductaion, and work experience!" keyword="Profile, Tech Stack, Education, Work Experience, Kaleel Boston, Kaleel, Boston">
 	<p>
-		Hello there dear patron, welcome to my humble abode. I, Kaleel Boston, have an interest for Software Development, specifically Web Development. However, this was not always the case. I became interested in programming close to the end of Secondary School. My first exposure was during a small coding camp in 3<sup>rd</sup> Form (Year 9). The ability to create simple games in processing that worked gave me a huge surge of dopamine. Although it peaked my interest then I wasn't serious about it until my second encounter which was in 5<sup>th</sup> Form (Year 11). One of the topics covered in my Information Technology class was programming in Pascal. This once again made me feel like I was good at something. When I wrote basic Pascal programs I felt a thirst to delve into the world of programming and uncover its secrets. Thus I decided to pursue an Associates Degree (Level 3/A Level) in Computer Science.
-		
-		<br><br>
+		Hi there, I am young lad with an interest in Software & Web Development. 
+	</p>
 
-		This tavern is a demonstration of my skills. And why not let you get to know me at the same time. <br>
-		Explore till you are content!
+	<hr>
+
+	<h2>Why Computer Science?</h2>
+	<p>
+		I became fully interested in Computer Science close to the end of my Secondary School career. I first encountered programming during a Coding Camp in 3<sup>rd</sup> Form (Year 9). There were learned how to make a simpe game in a language called Processing3. It was an intersting and fun experience which resulted in me being curious about programming. Soon after, I did a little research about HTML and CSS and tried them out for a bit. I eventually drifted away from HTML and CSS. Then during the second term in Information Technology class in 5<sup>th</sup> Form (Year 11), I was introduced to a language called Pascal. It had resparked my interest for programming. When I wrote basic Pascal programs I felt like I finally found something I was good at. I may not have been the best the world had seen or a prodigal son, but I like it was my chance. Due to this feeling I pondered about how I should go forward in life. Eventually, I came the decision to pursue an Associates Degree (Level 3/A Level) in Computer Science. And well here I am.
 	</p>
 
 	<hr>
 	
-	<h2 id="status">Status</h2>
-	<p>
-		Basic information about myself can be found just right below. 
-		<br>
-		The different sections are:
-		<li><a href="#profile-image" title="Profile">Profile</a></li>
-		<li><a href="#tech-stack" title="Tech Stack">Tech Stack</a></li>
-		<li><a href="#education" title="Education">Education</a></li>
-		<li><a href="#work-experience" title="Work Experience">Work Experience</a></li>
-	</p>
+	<div>
+		<h2>Discover</h2>
+		<p>
+			<li><a href="#profile-card" title="Profile">Profile</a></li>
+			<li><a href="#tech-stack" title="Tech Stack">Tech Stack</a></li>
+			<li><a href="#education" title="Education">Education</a></li>
+			<li><a href="#work-experience" title="Work Experience">Work Experience</a></li>
+		</p>
+	</div>
 
 	<hr>
 
-	<img id="profile-image" src="/images/headshot.jpg" alt="Headshot Of Kaleel Boston">
-
-	<hr>
-
+		<h3>Profile</h3>
 	<div id="profile-card">
-		<h3>Profile Card</h3>
+		<img id="profile-image" src="/images/headshot.jpg" alt="Headshot Of Kaleel Boston">
 		<div>
 			<p>Name: Kaleel Boston</p>
 			<p id="age"></p>
 			<p>Sex: Male</p>
 			<p>Height: Approx 5'8.5"/174cm (2022)</p>
-			<p>Weight: Approx 140.65lbs/63.8kg (May 2023)</p>
+			<p>Weight: Approx 140.65lbs/63.2kg (June 2023)</p>
 			<p>Nationality at Birth: Antiguan</p>
 			<p>Acquired Nationality: British & Montserratian</p>
 			<p>Ethnicity: West Indian/Black Caribbean</p>
@@ -92,23 +90,25 @@ import TechStackLevel from '../components/TechStackLevel.astro';
 			
 			<h4>Secondary School</h4>
 			<li>Antigua Grammr School - Old Parham Road, St. John's, Antigua (2014-2019)</li>
+			<p>Responsibilities:</p>
+			<li>Prefect (2018-2019)</li>
 			<p>Extra-Curricular Activity:</p>
-			<li>Interact Club (2016-2019) - Vice President (2018-2019) </li>
+			<li>Interact Club (2016-2019) - Vice President (2018-2019)</li>
 			<p>Caribbean Secondary School Certificate (GSCE A*-C / 9-4 Equivalent) Grades:</p>
-			<li>English A - Grade 1</li>
-			<li>Industrial Technology (Building Technology) - Grade 1</li>
-			<li>Industrial Technology (Electrical) - Grade 2</li>
-			<li>Information Technology - Grade 1</li>
-			<li>Physics - Grade 2</li>
-			<li>Mathematics - Grade 1</li>
-			<li>Principles of Business - Grade 1</li>
-			<li>Spanish - Grade 2</li>
+			<li>English A - Grade I</li>
+			<li>Industrial Technology (Building Technology) - Grade I (BTEC Level 2)</li>
+			<li>Industrial Technology (Electrical) - Grade II (BTEC Level 2)</li>
+			<li>Information Technology - Grade I</li>
+			<li>Physics - Grade II</li>
+			<li>Mathematics - Grade I</li>
+			<li>Principles of Business - Grade I</li>
+			<li>Spanish - Grade II</li>
 			<p>Awards:</p>
 			<li>Excellence in Principles of Business</li>
 			<li>Excellence in Building Technology</li>
 			<li>Most Helpful Student Award</li>
 			<li>The Cleven James Information Technology Award - Outstanding Performance in Information Technology</li>
-
+<!-- 
 			<hr>
 
 			<h4>Primary School</h4>
@@ -117,7 +117,7 @@ import TechStackLevel from '../components/TechStackLevel.astro';
 			<hr>
 
 			<h4>Preschool</h4>
-			<li>Baby Paradise - Hattin, St. John's, Antigua (2004-2007)</li>
+			<li>Baby Paradise - Hattin, St. John's, Antigua (2004-2007)</li> -->
 		</div>
 	</div>
 

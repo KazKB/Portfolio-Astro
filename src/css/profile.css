@@ -4,9 +4,8 @@ img {
     width: 200px;
     height: 200px;
     margin: auto;
-    margin-bottom: 1rem;
-    border-radius: var(--mid-border);
-    border: var(--mid-border) groove var(--purple);
+    border-radius: var(--mid);
+    border: var(--mid) groove var(--purple);
 }
 
 /* Main Configuration */
@@ -15,17 +14,11 @@ main h4 {
 }
 
 /* Profile Card Configuration */
-#profile-card {
-    padding-bottom: 0.1rem;
-}
 #profile-card p {
     text-align: center;
 }
 
 /* Tech Stack Configuration */
-#tech-stack {
-    margin-bottom: 1rem;
-}
 #tech-stack-levels {
     display: flex;
     justify-content: center;
@@ -33,9 +26,6 @@ main h4 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-}
-#tech-stack-levels p {
-    margin-top: 0.5rem;
 }
 #beginner-level, #intermediate-level, #advanced-level {
     padding: 7.5px 15px; 
@@ -63,8 +53,8 @@ main h4 {
 .tech-stack-item {
     text-align: center;
     width: 15ch;
-    border: var(--mini-border) solid var(--grey-2);
-    border-radius: var(--mid-border);
+    border: var(--mini) solid var(--grey-2);
+    border-radius: var(--mid);
 }
 .beginner {
     background-color: rgba(0, 100, 0, 0.5);
@@ -91,6 +81,11 @@ main h4 {
     border-width: 0.001rem;
 }
 
+/* Education Configuration */
+#education p {
+    color: var(--purple);
+}
+
 /* Laptop Screen Configuration */
 @media only screen and (min-width: 1000px) {
     /* Image Configuration */
@@ -99,12 +94,32 @@ main h4 {
         height: 300px;
     }
 
+    /* Profile Card Configuration */
+    #profile-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #profile-card p {
+        text-align: left;
+    }
+
     /* Tech Stack Configuration */
     .tech-stack-item:hover {
         border-style: groove;
-        border-width: var(--mid-border);
+        border-width: var(--mid);
         cursor: pointer;
+
+        /* To Prevent The Tech Stack Item From Moving When Border Style Is Changed */
         position: relative;
-        top: -0.2rem; /* To Prevent The Tech Stack Item From Moving When Border Style Is Changed */
+        top: -0.2rem; 
+        margin-bottom: -0.2rem;
+        margin-left: -0.2rem;
+        margin-right: -0.2rem;
+    }
+    .tech-stack-item:hover:not(:last-child) {
+        /* To Prevent The Last Tech Stack Item From Moving When Border Style Is Changed */
+        margin-top: 0.55rem;
+        margin-bottom: 0.55rem;
     }
 }

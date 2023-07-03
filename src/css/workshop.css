@@ -16,19 +16,10 @@
     text-align: center;
     color: var(--purple);
 }
-
 .arrow-size {
     animation: arrows 1s linear infinite alternate;
     padding: 0.5rem;
     font-size: var(--text);
-}
-
-/* Image Configuration */
-.workshop-item img {
-    display: block;
-    width: 320px;
-    margin: auto;
-    object-fit: contain;
 }
 
 /* Progress Configuration */
@@ -41,11 +32,6 @@
 
 /* Tablet Configuration */
 @media only screen and (min-width: 700px) {
-    /* Image Configuration */ 
-    .workshop-item img {
-        width: 540px;
-    }
-
     /* Progress Configuration */
     #progress img:first-of-type {
         height: 300px;
