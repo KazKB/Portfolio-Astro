@@ -21,22 +21,3 @@
     padding: 0.5rem;
     font-size: var(--text);
 }
-
-/* Progress Configuration */
-#progress img:first-of-type {
-    height: 200px;
-}
-#progress img:last-of-type {
-    height: 300px;
-}
-
-/* Tablet Configuration */
-@media only screen and (min-width: 700px) {
-    /* Progress Configuration */
-    #progress img:first-of-type {
-        height: 300px;
-    }
-    #progress img:last-of-type {
-        height: 500px;
-    }
-}
