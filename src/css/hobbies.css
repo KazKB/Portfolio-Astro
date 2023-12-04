@@ -5,7 +5,7 @@ img {
     height: 150px;
     margin: auto; /* For Those Outside Of The Image-Center Class */
     border-radius: 0.5rem;
-    border: var(--mid) groove var(--purple);
+    border: var(--mid) groove var(--black);
     object-fit: contain; /* Prevents Images From Being Stretched & Fit Without Being Resized */
     background-color: white;
 }
@@ -21,9 +21,9 @@ img {
 .null {
     padding: 50px 40px;
     border-radius: 0.5rem;
-    border: var(--mid) double var(--purple);
+    border: var(--mid) double var(--black);
     background-color: white;
-    color: var(--purple);
+    color: var(--black);
     font-size: 30px;
     margin: auto;
 }

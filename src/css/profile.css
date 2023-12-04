@@ -5,7 +5,7 @@ img {
     height: 200px;
     margin: auto;
     border-radius: var(--mid);
-    border: var(--mid) groove var(--purple);
+    border: var(--mid) groove var(--black);
 }
 
 /* Main Configuration */
@@ -53,7 +53,7 @@ main h4 {
 .tech-stack-item {
     text-align: center;
     width: 15ch;
-    border: var(--mini) solid var(--grey-2);
+    border: var(--mini) solid var(--black);
     border-radius: var(--mid);
 }
 .beginner {

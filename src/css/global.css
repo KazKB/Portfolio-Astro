@@ -4,7 +4,7 @@
     --grey: #242424;
     --grey-2: #858585;
     --black: #010101;
-    --purple: rgb (68,0,255);
+    --white: #fff;
 
     /* Fonts */
     --text: 12px;
@@ -36,7 +36,7 @@
     height: 70px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--purple);
+    background-color: var(--grey);
 }
 
 /* Element Configuration */

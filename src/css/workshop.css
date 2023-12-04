@@ -14,7 +14,7 @@
     font-style: normal;
     width: 100%;
     text-align: center;
-    color: var(--purple);
+    color: var(--black);
 }
 .arrow-size {
     animation: arrows 1s linear infinite alternate;

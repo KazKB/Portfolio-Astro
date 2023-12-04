@@ -6,9 +6,8 @@ main {
     border-right: var(--mini) solid var(--grey-2);
 }
 main h2, .sub-heading, main h3, main h4 {
-    color: var(--purple);
+    color: var(--white);
     letter-spacing: 0.2rem;
-    -webkit-text-stroke: 1px var(--black);
 }
 main p {
     letter-spacing: 0.05rem;
@@ -18,8 +17,7 @@ main a:hover {
 }
 #heading {
     margin-top: 0.5rem;
-    color: var(--purple);
-    -webkit-text-stroke: 1px var(--black);
+    color: var(--white);
 }
 .center-text {
     text-align: center;
@@ -36,9 +34,5 @@ main a:hover {
 @media only screen and (min-width: 1000px) { 
     main {
         max-width: 70ch;
-    }
-
-    main h2, #heading, .sub-heading, main h3, main h4 {
-        -webkit-text-stroke: 0;
     }
 }

@@ -5,13 +5,13 @@
     bottom: 1rem;
     padding: 0.7rem 1.2rem;
     background-color: rgba(50,50,50,0.5);
-    color: var(--purple);
+    color: var(--black);
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
 }
 .scroll:hover {
-    border: 0.01rem solid var(--purple);
+    border: 0.01rem solid var(--black);
     padding: 0.65rem 1.15rem; /* To Prevent The Button From Moving When Border Is Added */
 }
 .hidden {

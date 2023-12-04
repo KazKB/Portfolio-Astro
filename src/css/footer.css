@@ -6,8 +6,7 @@ footer {
     color: var(--black);
 }
 footer a:hover {
-    color: var(--purple);
-    -webkit-text-stroke: 0.5px var(--black);
+    color: var(--white);
 }
 footer address {
     font-style: normal;
